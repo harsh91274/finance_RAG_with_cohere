@@ -36,7 +36,7 @@ docstore = InMemoryDocstore(documents)
 # Initialize Cohere #######################################################################################################
 
 # Initialize Cohere embeddings
-embedding_function = CohereEmbeddings(cohere_api_key="ufQXgqBRTgMBLnQxg4egMEa14L7NMkMfeXAyDOfL",  model='embed-english-light-v3.0')
+embedding_function = CohereEmbeddings(cohere_api_key="",  model='embed-english-light-v3.0')
 
 
 # Load the labeled dataset for Cohere's classify API
@@ -44,7 +44,7 @@ with open("labelled_dataset.pkl", "rb") as f:
     labelled_dataset = pickle.load(f)
 
 # Initialize Cohere client
-co = cohere.Client('ufQXgqBRTgMBLnQxg4egMEa14L7NMkMfeXAyDOfL')
+co = cohere.Client('')
 
 ########################################################################################################
 
